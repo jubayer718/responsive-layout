@@ -2,11 +2,27 @@
       .footer-container {
         grid-template-columns: repeat(2, 1fr);
       }
+      .footer-links-container div:first-child{
+    
+        margin-left: -5.5rem;
+      }
+
     }
 
     @media (max-width: 600px) {
       .footer-container {
         grid-template-columns: 1fr;
+      }
+      .footer-links-container{
+        flex-direction: column;
+        
+      }
+       .footer-links-container div:first-child{
+        margin-left: 0rem;
+      }
+      #useful-links{
+        display: flex;
+        gap: 5rem;;
       }
       .footer-bottom {
         flex-direction: column;
